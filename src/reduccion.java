@@ -55,7 +55,7 @@ public class Reduccion {
      * @param gPrima Gráfica reducida G'.
      * @param k Parámetro k conservado.
      */
-    public static void imprimirResultado(Grafica g, Grafica gPrima, int k) {
+    public static void mostrarReducción(Grafica g, Grafica gPrima, int k) {
         System.out.println("1. EJEMPLAR ORIGINAL: VERTEX COVER");
         System.out.println("Valor de k = " + k);
         g.mostrarDetallesCompleto();
