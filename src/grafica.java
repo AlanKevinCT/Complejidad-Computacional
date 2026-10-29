@@ -86,15 +86,58 @@ public class Grafica {
     }
 
     /**
-     * Muestra la estructura de la gráfica con sus listas de adyacencia.
+     * Imprime en consola los vértices desglosados por originales y agregados.
+     */
+    public void imprimirVertices() {
+        System.out.println("--- Vértices Originales ---");
+        for (Vertice v : vertices) {
+            if (v.getOriginal()) {
+                System.out.print(v.getEtiqueta() + " ");
+            }
+        }
+        System.out.println();
+
+        System.out.println("--- Nuevos Vértices Agregados ---");
+        boolean hayNuevos = false;
+        for (Vertice v : vertices) {
+            if (!v.getOriginal()) {
+                System.out.print(v.getEtiqueta() + " ");
+                hayNuevos = true;
+            }
+        }
+        if (!hayNuevos) System.out.print("(Ninguno)");
+        System.out.println();
+    }
+
+    /**
+     * Imprime en consola las aristas desglosadas por originales y agregadas.
+     */
+    public void imprimirAristas() {
+        System.out.println("--- Aristas Originales ---");
+        for (Arista a : aristas) {
+            if (a.isOriginal()) {
+                System.out.print(a + " ");
+            }
+        }
+        System.out.println();
+
+        System.out.println("--- Nuevas Aristas Agregadas ---");
+        boolean hayNuevas = false;
+        for (Arista a : aristas) {
+            if (!a.isOriginal()) {
+                System.out.print(a + " ");
+                hayNuevas = true;
+            }
+        }
+        if (!hayNuevas) System.out.print("(Ninguna)");
+        System.out.println();
+    }
+
+    /**
+     * Despliega la información completa de la gráfica (Vértices, Aristas y Adyacencias).
      */
     public void mostrarGrafica() {
-        for (Vertice v : vertices) {
-            System.out.print(v.getEtiqueta() + " (Original: " + v.getOriginal() + ") -> ");
-            for (Vertice vecino : v.getVecinos()) {
-                System.out.print(vecino.getEtiqueta() + " ");
-            }
-            System.out.println();
-        }
+        imprimirVertices();
+        imprimirAristas();
     }
 }
