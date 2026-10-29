@@ -5,15 +5,25 @@ Este programa realiza la reducción polinomial del problema de **Cubierta de Vé
 
 ## Estructura del Programa 1
 .
+
 ├── ejemplares/
+
 │   ├── ejemplar_si.txt
+
 │   └── ejemplar_no.txt
+
 ├── src/
+
 │   ├── Arista.java
+
 │   ├── Grafica.java
+
 │   ├── Main.java
+
 │   ├── Reduccion.java
+
 │   └── Vertice.java
+
 └── README.md
 
 ## Compilación
