@@ -18,20 +18,19 @@ Este programa realiza la reducción polinomial del problema de **Cubierta de Vé
 
 ## Compilación
 
-Para compilar el proyecto desde la raíz del mismo, ejecuta:
+Para compilar el programa desde la raíz, ejecuta:
 
 ```bash
-javac com/FC/Programa1/src/*.java
+javac src/*.java
 ```
 
-
 ## Ejecución
-Para probar el ejemplar con respuesta SI:
+Para probar desde la raíz, el ejemplar con respuesta SI:
 ```bash
-java com.FC.Programa1.src.Main ejemplares/ejemplar_si.txt
+java src.Main ejemplares/ejemplar_si.txt
 ```
 
 Para probar el ejemplar con respuesta NO:
 ```bash
-java com.FC.Programa1.src.Main ejemplares/ejemplar_no.txt
+java src.Main ejemplares/ejemplar_no.txt
 ```

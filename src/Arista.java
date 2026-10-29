@@ -1,4 +1,4 @@
-package com.FC.Programa1.src;
+package src;
 
 /**
  * Clase Arista que representa una Arista entre dos vértices.

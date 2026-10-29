@@ -1,4 +1,4 @@
-package com.FC.Programa1.src;
+package src;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
