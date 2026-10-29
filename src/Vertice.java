@@ -9,9 +9,9 @@ import java.util.List;
  */
 public class Vertice {
 
-    private String etiqueta;
-    private List<Vertice> vecinos;
-    private boolean original;
+    private String etiqueta; // identificador único del vértice
+    private List<Vertice> vecinos; // lista de adyacencia que contiene los vértices vecinos
+    private boolean original; // indica si el vértice es original del problema de cobertura o fue agregado por la reducción
 
     /**
      * Constructor para crear un nuevo vértice.
@@ -25,29 +25,14 @@ public class Vertice {
         this.vecinos = new LinkedList<>();
     }
 
-    /**
-     * Obtiene la etiqueta que identifica al vértice.
-     * 
-     * @return La etiqueta del vértice.
-     */
     public String getEtiqueta() {
         return etiqueta;
     }
 
-    /**
-     * Dice si el vértice es original del problema de cobertura o fue agregado por la reducción.
-     * 
-     * @return true si ya estaba antes de la reducción, false en caso contrario.
-     */
     public boolean getOriginal(){
         return original;
     }
 
-    /**
-     * Obtiene los vecinos adyacentes a este vertice.
-     * 
-     * @return Lista de vértices adyacentes.
-     */
     public List<Vertice> getVecinos() {
         return vecinos;
     }
