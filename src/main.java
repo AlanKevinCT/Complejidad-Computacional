@@ -14,8 +14,8 @@ public class Main {
     public static void main(String[] args) {
         // Validar que se haya pasado la ruta del archivo de ejemplar como parámetro
         if (args.length < 1) {
-            System.out.println("Error: Debe proporcionar la ruta del archivo del ejemplar. \n 
-                                Uso: java com.FC.Programa1.src.Main <ruta_del_ejemplar>");
+            System.out.println("Error: Debe proporcionar la ruta del archivo del ejemplar.");
+            System.out.println("Uso: java com.FC.Programa1.src.Main <ruta_del_ejemplar>");
             return;
         }
 

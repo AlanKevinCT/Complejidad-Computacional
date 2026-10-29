@@ -115,7 +115,7 @@ public class Grafica {
     public void imprimirAristas() {
         System.out.println("--- Aristas Originales ---");
         for (Arista a : aristas) {
-            if (a.isOriginal()) {
+            if (a.esOriginal()) {
                 System.out.print(a + " ");
             }
         }
@@ -124,7 +124,7 @@ public class Grafica {
         System.out.println("--- Nuevas Aristas Agregadas ---");
         boolean hayNuevas = false;
         for (Arista a : aristas) {
-            if (!a.isOriginal()) {
+            if (!a.esOriginal()) {
                 System.out.print(a + " ");
                 hayNuevas = true;
             }

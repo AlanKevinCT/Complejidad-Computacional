@@ -58,10 +58,10 @@ public class Reduccion {
     public static void mostrarReducción(Grafica g, Grafica gPrima, int k) {
         System.out.println("1. EJEMPLAR ORIGINAL: VERTEX COVER");
         System.out.println("Valor de k = " + k);
-        g.mostrarDetallesCompleto();
+        g.mostrarGrafica();
 
         System.out.println("\n2. EJEMPLAR RESULTANTE: DOMINATING SET (G')");
         System.out.println("Valor de k = " + k);
-        gPrima.mostrarDetallesCompleto();
+        gPrima.mostrarGrafica();
     }
 }
